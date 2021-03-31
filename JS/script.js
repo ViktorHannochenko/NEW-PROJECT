@@ -1,19 +1,16 @@
 "use strict";
 
-let incr = 10,
-    decr = 10;
+if (4 == 9) {
+    console.log("Ok!");
+} else {
+    console.log("Error");
+}
+const num = 50;
 
-// ++incr;
-// --decr;
-
-console.log(++incr);
-console.log(--decr);
-
-console.log(5%2);
-
-console.log(2*4 == 8);
-
-const isChecked = false,
-    isClose = false;
-
-console.log(isChecked || !isClose);
+if (num <49) {
+    console.log("Error");
+} else if (num > 100) {
+    console.log("Very big");
+} else {
+    console.log("OK!");
+}
