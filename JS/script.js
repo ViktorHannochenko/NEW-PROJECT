@@ -1,22 +1,22 @@
 "use strict";
+ function showFirstMessage (text) {
+     console.log (text);
+ }
 
-let num = 50;
+ showFirstMessage("Hello, Wiktor!!!");
 
-// while (num<55){
-//     console.log (num);
-//     num++;
-// }
-// do {
-//     console.log(num);
-//     num++;
-// }
-// while(num < 55);
+//  function calc (a, b) {
+//      return (a+b);
+//  }
+ 
+//  console.log(calc (3, 4));
+//  console.log(calc (5, 7));
 
-for ( let i=1; i<10; i++) {
-    if (i===6) {
-        // break;
-        continue;
-    }
-    console.log(i);
 
-}
+ const logger = function() {
+    console.log("hello");
+ };
+
+ logger();
+
+ const calc = (a, b) => a+b;
