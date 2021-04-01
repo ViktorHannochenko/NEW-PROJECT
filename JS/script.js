@@ -1,22 +1,27 @@
 "use strict";
- function showFirstMessage (text) {
-     console.log (text);
- }
 
- showFirstMessage("Hello, Wiktor!!!");
+const str = 'teSt';
 
-//  function calc (a, b) {
-//      return (a+b);
-//  }
- 
-//  console.log(calc (3, 4));
-//  console.log(calc (5, 7));
+// console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
 
+const fruit = "Some fruit";
+console.log(fruit.indexOf("q"));
 
- const logger = function() {
-    console.log("hello");
- };
+const logg ="Hello world";
+// console.log(logg.indexOf("Viktor"));
+// console.log(logg.slice(16, 22));
 
- logger();
+// console.log(logg.substring(6, 11));
 
- const calc = (a, b) => a+b;
+const num = 12.2;
+
+console.log(Math.round(num));
+
+const test = '12.2px';
+// console.log(parseInt(test));
+
+// console.log(logg.substr(6, 5));
+
+console.log(parseFloat(test));
