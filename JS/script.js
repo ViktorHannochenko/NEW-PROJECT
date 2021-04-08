@@ -1,36 +1,48 @@
 "use strict";
+// let a = 5,
+//     b = a;
+//     b = b + 5;
+// console.log(b);
+// console.log(a);
 
-const arr = [1, 23, 3, 16, 8];
+// const obj = {
+//     a: 5,
+//     b: 1
+// };
+// const copy = obj;
 
-arr.sort(compareNum);
-console.log(arr);
-
-function compareNum (a, b) {
-    return a-b;
+// copy.a = 10;
+// console.log(copy);
+// console.log(obj);
+function copy(mainObj) {
+    let objCopy = {};
+    let key;
+    for(key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
 }
 
+const numbers = {
+    a:2,
+    b:5,
+    c: {
+        x:7,
+        y:4
+    }
+};
+const newNumbers = copy(numbers);
+newNumbers.a = 10;
+console.log(newNumbers);
+console.log(numbers);
 
+const add = {
+    d: 17,
+    e: 20
+};
+console.log( Object.assign({}, add));
 
-// arr.forEach(function(item, i, arr){
-//     console.log(`${i}: ${item} внутри массива ${arr}`);
-// });
-
-// arr[99]=0;
-// console.log(arr.length);
-// console.log(arr);
-// arr.pop();
-// arr.push(10);
-
-// console.log(arr);
-
-// for (let i = 0; i < arr.length; i++) {
-//     console.log(arr[i]);
-// }
-
-// for (let value of arr) {
-//     console.log(value);
-// }
-// const str = prompt('', '');
-// const products = str.split(',');
-// products.sort();
-// console.log(products.join(";"));
+const video = ['youtube', 'vimeo', 'rutube'],
+    blogs = ['wordpress', 'livejournal','blogger'],
+    internet = [...video, ...blogs, 'vk', 'facebook'];
+    console.log(internet);
