@@ -1,20 +1,36 @@
 "use strict";
 
-// console.dir([1, 2, 3]);
+// let x = 5;
+//  alert( x++ ); //5
 
-const soldier = {
-    health: 400,
-    armor: 200
-};
+// [ ] + false - null + true 
+// console.log([] + false - null + true);  //NaN
 
-const jonh = Object.create(soldier);
+// let y = 1; 
+// let x = y = 2; 
+// alert(x);     //2
 
-// const jonh ={
-//     health: 100
-// };
+// [ ] + 1 + 2
+// console.log([ ] + 1 + 2);    //12
 
-// jonh._proto_= soldier;
 
-Object.setPrototypeOf(jonh, soldier);
+// alert( "1"[0] );  //1
 
-console.log(jonh.armor);
+// 2 && 1 && null && 0 && undefined
+
+// console.log(2 && 1 && null && 0 && undefined); //null
+
+
+// console.log(!!( 1 && 2 ) === (1 && 2));  //false
+
+// alert( null || 2 && 3 || 4 );   //3
+
+// const a = [1, 2, 3]; 
+// const b = [1, 2, 3]; 
+// console.log(a==b); //false
+
+// alert( +"Infinity" ); //Infinity
+
+// console.log("Ёжик" > "яблоко");  //false
+
+// console.log(0 || "" || 2 || undefined || true || falsе ); //2
